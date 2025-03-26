@@ -18,8 +18,26 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/service', function () {
-    return view('service');
-})->name('service');
+Route::get('/jadwal-ibadah', function () {
+    return view('jadwal_ibadah');
+})->name('jadwalIbadah');
+
+Route::get('/tentang-kami', function () {
+    return view('about');
+})->name('tentangKami');
+
+Route::get('/kegiatan', function () {
+    return view('kegiatan');
+})->name('kegiatan');
+
+Route::get('/departemen', function () {
+    return view('departemen');
+})->name('departemen');
+
+Route::get('/kontak', function () {
+    return view('kontak');
+})->name('kontak');
+
+
 
 Route::post('/kirimdoa', [DoaController::class, 'index'])->name('kirimdoa');
