@@ -2,9 +2,38 @@
 @section('title', 'Home')
 @section('konten')
     <!-- Page Title -->
-    <div class="section">
-        <div class="container-fluid p-0" data-aos="fade-up">
-            <img class="img-thumbnail mt-2 w-100" src="{{ asset('bg.jpeg') }}" alt="" srcset="">
+    <div class="section hero">
+
+        <div class="container mt-5 text-center" data-aos="fade-up">
+            <h1 class="h1 display-2 font-title fw-bold color-gradient">The Year Of Harvest</h1>
+            <h3 class="h3 text-secondary font-subtitle">Bersama Menuai Berkat, Menjadi Terang Bagi Dunia</h3>
+
+            
+            <div class="row my-4">
+                <div class="col-md-6 my-4">
+                    <article>
+                        <h5 class="fw-semibold text-uppercase">Ulangan 11: 13-14</h5>
+                        <p class="font-ayat fs-6 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, modi hic. Repudiandae dolorum saepe temporibus, placeat minima tenetur autem quos nulla debitis ullam voluptate aliquam asperiores consectetur enim vero repellendus.</p>
+                    </article>
+                    
+                </div>
+                <div class="col-md-6 my-4">
+                    <article>
+                        <h5 class="fw-semibold text-uppercase ">Yohanes 4: 35b</h5>
+                        <p class="font-ayat fs-6 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, modi hic. Repudiandae dolorum saepe temporibus, placeat minima tenetur autem quos nulla debitis ullam voluptate aliquam asperiores consectetur enim vero repellendus.</p>
+                    </article>
+
+                </div>
+            </div>
+            
+            <div class="mt-6 flex gap-2">
+                <a href="{{ route('jadwalIbadah') }}" class="px-3 mx-2 py-2 mb-3 btn btn-primary btn-lg rounded-pill shadow-lg">Bergabung dalam Ibadah</a>
+                <a href="{{ route('tentangKami') }}" class="px-3 mx-2 py-2 mb-3 btn btn-outline-primary btn-lg rounded-pill shadow-lg">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+
+        <div class="container-fluid px-2 py-5" data-aos="fade-up">
+            <img class="img-fluid mt-2 w-100" src="{{ asset('bg.jpeg') }}" alt="" srcset="">
 
         </div>
     </div><!-- End Page Title -->
